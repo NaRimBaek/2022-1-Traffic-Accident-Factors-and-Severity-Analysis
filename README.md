@@ -129,6 +129,7 @@ Classification에서는 XGBclassifier, CatBoostClassifier, LGBMClassifier 총 3�
 • classification의 경우, 사망자가 없는 사고, 사망사고(사망자 1-2명), 대형사고(사망자 3명이상, 사상자 20명 이상)로 분류하다보니, 대부분 majority로 예측해버리는 데이터 불균형 문제가 심각했다. 
   
         -> classification target을 sampling 기법을 통해, 어느정도 데이터 불균형을 해소한 후, model을 생성하면 성능 향상을 기대해 볼 수 있다. 
+        ->  사망사고, 대형사고 class를 합쳐서 2-class classification 분류로 수정한다면, 성능 향상을 기대해 볼 수 있다.
 
 
 ## 내가 기여한 점
